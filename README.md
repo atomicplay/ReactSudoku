@@ -2,6 +2,12 @@
 Sudoku Game written in React that can be hosted on Apache
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+#Special Note:
+If you checked out this project and are building it for the first time, you will need to run the following command in order to create a node_modules directory and install local node dependencies:
+```bash
+npm install
+```
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
