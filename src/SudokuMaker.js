@@ -71,12 +71,7 @@ function MakeSudukoPuzzle(){
 		var allowedPossibilities = _.difference(possibilities,usedPossibilities);
 		var newNumberIndex = 0;
 		while(allowedPossibilities.length){
-			//newNumberIndex = Math.floor(Math.random() * Math.floor(allowedPossibilities.length));
-			if (allowedPossibilities.length > 1){
-				newNumberIndex = _.random(allowedPossibilities.length - 1);
-			} else {
-				newNumberIndex = 0;
-			}
+			newNumberIndex = _.random(allowedPossibilities.length - 1);
 			board[curRowIndex][curColIndex] = allowedPossibilities[newNumberIndex];
 			if (recursivelyBuildBoard(curRowIndex,curColIndex+1)){
 				return true;
