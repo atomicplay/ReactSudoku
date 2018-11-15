@@ -94,7 +94,8 @@ class App extends Component {
   private scheduleUpdate(updateFn: any) {
 	this.pendingUpdateFn = updateFn;
 	if (!this.requestedFrame) {
-		this.requestedFrame = requestAnimationFrame(this.drawFrame);
+		let boundFunc = this.drawFrame.bind(this);
+		this.requestedFrame = requestAnimationFrame(boundFunc);
 	}
   }
 
